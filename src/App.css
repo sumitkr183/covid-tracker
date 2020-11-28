@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+body{
+    background-color: #f3f4f5 !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    margin-bottom: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar-brand{
+    font-weight: bold;
+    color: #de2cc3 !important
+}
+
+.cover_bar{
+    width: 100%;    
+    padding: 10px 30px;
+    background-color: #fff;
+}    
+
+.cover_bar_table{
+    height: 750px;
+    overflow-y: scroll;
+}
+
+.cover_bar table{
+    width: 100%;
+}
+
+.cover_bar table tr{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cover_bar table tr img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.map_cover{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.map{
+    margin-top: 2rem;
+    width: 100%;
+    height: 550px;
+    border: 1px solid;
+}
+
+.map .leaflet-container{
+    height: 100%;
+    width: 100%;
+}
+
+.info-flag img {
+    width: 100px;
+    border-radius: 5px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .info-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .info-container {
+    width: 150px;
   }
-}
+  
+  .info-flag {
+    height: 80px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 8px;
+  }
+  
+  .info-confirmed,
+  .info-recovered,
+  .info-deaths {
+    font-size: 16px;
+    margin-top: 5px;
+  }
